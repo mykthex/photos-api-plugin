@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <title>IG API Test</title>
+
+    <meta charset="UTF-8">
+
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Catamaran:400,700,600,300,500|Nunito' rel='stylesheet' type='text/css'>
+
+    <style>
+        .ajax-loader {
+            opacity: 0;
+            visibility: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            transform: translateY(-100%);
+            transition: transform 300ms, opacity 300ms 150ms;
+            background: url('http://i.imgur.com/tdKHTvX.gif') center no-repeat rgba(0, 0, 0, 0.8);
+        }
+        .ajax-loader.is-active {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="photosContainer">
+
+    </div>
+    <div class="ajax-loader">
+
+    </div>
+
+    <!-- Vendors -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+
+    <script src="js/jquery.getPhotos.js"></script>
+
+    <script type="text/javascript">
+        $(window).on('load', function() {
+            $('.photosContainer').getPhotos({
+                isAllUsers: false,
+                isAllHashtag: true,
+                photosQty: '20',
+                hashtag: 'team',
+                username: 'geniebouchard'
+            });
+        });
+    </script>
+
+</body>
+</html>
