@@ -14,12 +14,8 @@
             username: 'geniebouchard',
             nbPages: 2,
             labels: {
-                label1: 'label1',
-                label2: 'label2'
             },
             classes: {
-                class1: 'class1',
-                class2: 'class2',
                 states: {
                     active: 'is-active'
                 }
@@ -69,7 +65,7 @@
             // Call to API
             $.ajax({
                 url: this.config.apiUrl + this.config.username + '/media' + urlParameter,
-                dataType: 'json',
+                dataType: 'jsonp',
                 type: 'GET',
                 success: $.proxy(function(data) {
                     this.ajaxLoader.removeClass(this.classes.states.active);
