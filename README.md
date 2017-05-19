@@ -7,6 +7,7 @@ Get photos from the instagram API and add them to a DIV
 
 	```html
 	<script src="path/to/jquery.min.js"></script>
+	<script src="path/to/underscore.js"></script>
 	```
 
 2. Include plugin's code:

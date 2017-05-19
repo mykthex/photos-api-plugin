@@ -3,7 +3,7 @@
 <html lang="fr">
 <head>
 
-    <title>IG API Test</title>
+    <title>Get photos from API</title>
 
     <meta charset="UTF-8">
 
@@ -50,15 +50,13 @@
     <script src="js/jquery.getPhotos.js"></script>
 
     <script type="text/javascript">
-        $(window).on('load', function() {
-            $('.photosContainer').getPhotos({
-                apiUrl: 'https://igapi.ga/',
-                isAllUsers: false,
-                isAllHashtag: true,
-                hashtag: 'team',
-                username: 'geniebouchard',
-                nbPages: 2,
-            });
+        $('.photosContainer').getPhotos({
+            apiUrl: 'https://igapi.ga/',
+            isAllUsers: false,
+            isAllHashtag: true,
+            hashtag: 'team',
+            username: 'geniebouchard',
+            nbPages: 2,
         });
     </script>
 

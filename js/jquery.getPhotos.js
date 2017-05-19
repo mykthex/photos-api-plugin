@@ -67,7 +67,7 @@
             // Call to API
             $.ajax({
                 url: this.config.apiUrl + this.config.username + '/media' + urlParameter,
-                dataType: 'json',
+                dataType: 'jsonp',
                 type: 'GET',
                 success: $.proxy(function(data) {
                     this.ajaxLoader.removeClass(this.classes.states.active);
