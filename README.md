@@ -1,4 +1,4 @@
-# jQuery Lightbox Plugin
+# jQuery photos API Plugin
 Get photos from the instagram API and add them to a DIV
 
 ## Usage

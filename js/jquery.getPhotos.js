@@ -16,8 +16,10 @@
             labels: {
             },
             classes: {
+                visuallyhidden: 'visuallyhidden',
                 states: {
-                    active: 'is-active'
+                    active: 'is-active',
+                    inactive: 'is-inactive'
                 }
             }
         };
@@ -65,7 +67,7 @@
             // Call to API
             $.ajax({
                 url: this.config.apiUrl + this.config.username + '/media' + urlParameter,
-                dataType: 'jsonp',
+                dataType: 'json',
                 type: 'GET',
                 success: $.proxy(function(data) {
                     this.ajaxLoader.removeClass(this.classes.states.active);
