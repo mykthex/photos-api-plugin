@@ -52,11 +52,12 @@
     <script type="text/javascript">
         $(window).on('load', function() {
             $('.photosContainer').getPhotos({
+                apiUrl: 'http://puttheapiurlhere.com',
                 isAllUsers: false,
                 isAllHashtag: true,
-                photosQty: '20',
                 hashtag: 'team',
-                username: 'geniebouchard'
+                username: 'geniebouchard',
+                nbPages: 2,
             });
         });
     </script>

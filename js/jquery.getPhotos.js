@@ -9,8 +9,8 @@
         this.defaults = {
             isAllUsers: true,
             isAllHashtag: true,
-            hashtag: 'coffee',
-            apiUrl: 'http://stable-bunker.radio-canada.ca/component/ContentFromWebRequest/ContentResult?url=https://www.instagram.com/',
+            hashtag: 'tennis',
+            apiUrl: '',
             username: 'geniebouchard',
             nbPages: 2,
             labels: {
