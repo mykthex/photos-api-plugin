@@ -18,8 +18,7 @@ Get photos from the instagram API and add them to a DIV
 3. Prepare the HTML for the photos container and the ajax loader:
 
 	```html
-	<div class="photosContainer"></div>
-  <div class="ajax-loader"></div>
+	<div class="photosContainer"></div><div class="ajax-loader"></div>
 	```
 
 3. Call the plugin:
@@ -28,7 +27,7 @@ Get photos from the instagram API and add them to a DIV
 	$('.photosContainer').lightbox({
 	    apiUrl: '',
 	    hashtag: '',
-      username: ''
+            username: ''
 	});
 	```
 
@@ -44,15 +43,6 @@ Get photos from the instagram API and add them to a DIV
 **Default value:** -
 
 The API URL returning JSON
-
----
-
-#### `elementToFocus`
-
-> **Type:** String<br>
-**Default value:** null
-
-Element to focus on lightbox open
 
 ---
 
